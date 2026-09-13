@@ -1,14 +1,20 @@
+// vertices parameter
 class Dinic {
     constructor(vertices) {
+        // this.V = vertices
         this.V = vertices;
-
+     // this.graph = Array.from
         this.graph = Array.from(
+            // { length: vertices }
             { length: vertices },
+         // () => []
             () => []
         );
     }
-
+ // addEdges(from, to, capacity)
     addEdge(from, to, capacity) {
+     // this.graph[from].push(|to, capacity,
+     // flow: 0, reverse: this.graph[to].length
         this.graph[from].push({
             to,
             capacity,
@@ -135,6 +141,7 @@ class Dinic {
 
 
 // Example
+// let network = new Dinic(4);
 let network = new Dinic(4);
 
 network.addEdge(0,1,10);
