@@ -4,12 +4,6 @@ class Node {
     constructor(value) {
         this.value = value;
         this.next = null;
-      this.value = value;
-    clthis.next = null;
-    Lithis.next = value;
-      thismnext = null;
-      this.next = null;
-      this.value = value;
     }
 }
 
