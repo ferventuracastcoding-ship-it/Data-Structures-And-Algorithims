@@ -18,23 +18,9 @@ class LinkedList {
         const newNode = new Node(value);
 
         if (this.head === null) {
-            this.head = newNode;
-          this.head = newNode;
-          this.head = newNode;
-          this.head = newNode;
-    currenthis.head = newNode;
-          this.head = newNode;
-          this.head = newNode;
-          this.head = newNode;
-          this.head = newNode;
-          this.head = newNode;
-          this.head = newNode;
-          this.head = newNode;
           this.head = newNode;
         } else {
             let current = this.head;
-          let curre t = this.head;
-          let current = this.head;
 
             while (current.next !== null) {
                 current = current.next;
