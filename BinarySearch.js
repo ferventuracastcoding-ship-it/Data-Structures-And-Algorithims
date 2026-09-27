@@ -1,16 +1,19 @@
+// Binary Search
+// key and value
 const binarySearch(key, value) {
   console.log("Binary Search");
   return key + value;
 }
-
+// arr and target
 function binarySearch(arr, target) {
   let left = 0;
   let right = arr.length - 1;
-
+// While loop
   while(left <= right) {
+    // Math.floor() function
     const mid = Math.floor((left + right) / 2);
     const current = arr[mid];
-
+// current === target
     if(current === target) {
       retrun mid;
     }
