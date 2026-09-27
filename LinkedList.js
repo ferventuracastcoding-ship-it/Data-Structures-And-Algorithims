@@ -6,17 +6,22 @@ class Node {
         this.next = null;
     }
 }
-
+// Linked List
+// this.head
+// equals null
+// this.size
+// equals 0
 class LinkedList {
     constructor() {
         this.head = null;
         this.size = 0;
     }
-
+// append
+// newNode
     // Add to the end
     append(value) {
         const newNode = new Node(value);
-
+// this.head === null
         if (this.head === null) {
           this.head = newNode;
         } else {
@@ -31,7 +36,7 @@ class LinkedList {
 
         this.size++;
     }
-
+// prepend
     // Add to the beginning
     prepend(value) {
         const newNode = new Node(value);
@@ -41,7 +46,7 @@ class LinkedList {
 
         this.size++;
     }
-
+// contains
     // Search for a value
     contains(value) {
         let current = this.head;
@@ -56,7 +61,7 @@ class LinkedList {
 
         return false;
     }
-
+// delete
     // Delete first occurrence
     delete(value) {
         if (this.head === null) {
@@ -68,7 +73,7 @@ class LinkedList {
             this.size--;
             return;
         }
-
+// let current = this.head;
         let current = this.head;
 
         while (current.next !== null) {
@@ -81,7 +86,7 @@ class LinkedList {
             current = current.next;
         }
     }
-
+// display
     // Print list
     display() {
         let current = this.head;
@@ -96,7 +101,7 @@ class LinkedList {
     }
 }
 
-
+// list = new LinkedList();
 // Create linked list
 const list = new LinkedList();
 
