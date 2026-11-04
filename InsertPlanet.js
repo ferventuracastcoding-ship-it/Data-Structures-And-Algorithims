@@ -1,4 +1,4 @@
-const tableSize = 17;
+const tableSize = 200;
 const planetTable = Array.from(
   { length: tableSize },
   () => []
