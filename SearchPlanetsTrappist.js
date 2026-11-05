@@ -13,4 +13,4 @@ function searchPlanet(name) {
 }
 
 console.log(searchPlanet("TRAPPIST-1e"));
-console.log("Trappist is the best Solar System for light speed travel in the scinece fiction realm");
+console.log("In the scinece fiction realm, Trappist is the best Solar System for light speed travel");
