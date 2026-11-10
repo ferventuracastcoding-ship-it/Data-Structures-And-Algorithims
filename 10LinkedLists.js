@@ -2,35 +2,26 @@
 // LINKED LIST - 10 FUNCTIONS
 // SATURN SPACE STATION NETWORK
 // ==========================================
-
-// ==========================================
 // 1. NODE
 // ==========================================
-
 class Node {
     constructor(value) {
         this.value = value;
         this.next = null;
     }
 }
-
-
 // ==========================================
 // 2. LINKED LIST
 // ==========================================
-
 class LinkedList {
 
     constructor() {
         this.head = null;
     }
-
-
     // ======================================
     // FUNCTION 1: APPEND
     // Add a node to the end
     // ======================================
-
     append(value) {
 
         const newNode = new Node(value);
@@ -48,13 +39,10 @@ class LinkedList {
 
         current.next = newNode;
     }
-
-
     // ======================================
     // FUNCTION 2: PREPEND
     // Add a node to the beginning
     // ======================================
-
     prepend(value) {
 
         const newNode = new Node(value);
@@ -63,13 +51,10 @@ class LinkedList {
 
         this.head = newNode;
     }
-
-
     // ======================================
     // FUNCTION 3: FIND
     // Search for a value
     // ======================================
-
     find(value) {
 
         let current = this.head;
@@ -85,13 +70,10 @@ class LinkedList {
 
         return null;
     }
-
-
     // ======================================
     // FUNCTION 4: REMOVE
     // Remove a node by value
     // ======================================
-
     remove(value) {
 
         if (this.head === null) {
@@ -119,13 +101,10 @@ class LinkedList {
             current = current.next;
         }
     }
-
-
     // ======================================
     // FUNCTION 5: DISPLAY
     // Print the linked list
     // ======================================
-
     display() {
 
         let current = this.head;
@@ -147,13 +126,10 @@ class LinkedList {
 
         console.log(result);
     }
-
-
     // ======================================
     // FUNCTION 6: COUNT
     // Count all nodes
     // ======================================
-
     count() {
 
         let current = this.head;
@@ -169,13 +145,10 @@ class LinkedList {
 
         return total;
     }
-
-
     // ======================================
     // FUNCTION 7: REVERSE
     // Reverse the linked list
     // ======================================
-
     reverse() {
 
         let previous = null;
@@ -195,13 +168,10 @@ class LinkedList {
 
         this.head = previous;
     }
-
-
     // ======================================
     // FUNCTION 8: GET
     // Get a node by index
     // ======================================
-
     get(index) {
 
         let current = this.head;
@@ -221,12 +191,9 @@ class LinkedList {
 
         return null;
     }
-
-
     // ======================================
     // FUNCTION 9: INSERT AT INDEX
     // ======================================
-
     insertAt(index, value) {
 
         const newNode = new Node(value);
@@ -275,19 +242,13 @@ class LinkedList {
         return this.head === null;
     }
 }
-
-
 // ==========================================
 // CREATE SATURN STATION LINKED LIST
 // ==========================================
-
 const stations = new LinkedList();
-
-
 // ==========================================
 // ADD 10 SPACE STATIONS
 // ==========================================
-
 stations.append("Saturn Station 01");
 stations.append("Saturn Station 02");
 stations.append("Saturn Station 03");
@@ -298,20 +259,15 @@ stations.append("Saturn Station 07");
 stations.append("Saturn Station 08");
 stations.append("Saturn Station 09");
 stations.append("Saturn Station 10");
-
-
 // ==========================================
 // TEST FUNCTION 1
 // APPEND
 // ==========================================
-
 console.log("FUNCTION 1: APPEND");
 
 stations.append("Titan Research Station");
 
 stations.display();
-
-
 // ==========================================
 // TEST FUNCTION 2
 // PREPEND
@@ -322,13 +278,10 @@ console.log("\nFUNCTION 2: PREPEND");
 stations.prepend("Saturn Command Station");
 
 stations.display();
-
-
 // ==========================================
 // TEST FUNCTION 3
 // FIND
 // ==========================================
-
 console.log("\nFUNCTION 3: FIND");
 
 const found = stations.find(
@@ -340,73 +293,55 @@ console.log(
         ? "Found: " + found.value
         : "Station not found"
 );
-
-
 // ==========================================
 // TEST FUNCTION 4
 // REMOVE
 // ==========================================
-
 console.log("\nFUNCTION 4: REMOVE");
 
 stations.remove("Saturn Station 03");
 
 stations.display();
-
-
 // ==========================================
 // TEST FUNCTION 5
 // DISPLAY
 // ==========================================
-
 console.log("\nFUNCTION 5: DISPLAY");
 
 stations.display();
-
-
 // ==========================================
 // TEST FUNCTION 6
 // COUNT
 // ==========================================
-
 console.log("\nFUNCTION 6: COUNT");
 
 console.log(
     "Total stations:",
     stations.count()
 );
-
-
 // ==========================================
 // TEST FUNCTION 7
 // REVERSE
 // ==========================================
-
 console.log("\nFUNCTION 7: REVERSE");
 
 stations.reverse();
 
 stations.display();
-
-
 // ==========================================
 // TEST FUNCTION 8
 // GET
 // ==========================================
-
 console.log("\nFUNCTION 8: GET");
 
 console.log(
     "Station at index 3:",
     stations.get(3)
 );
-
-
 // ==========================================
 // TEST FUNCTION 9
 // INSERT AT INDEX
 // ==========================================
-
 console.log("\nFUNCTION 9: INSERT AT INDEX");
 
 stations.insertAt(
@@ -415,13 +350,10 @@ stations.insertAt(
 );
 
 stations.display();
-
-
 // ==========================================
 // TEST FUNCTION 10
 // IS EMPTY
 // ==========================================
-
 console.log("\nFUNCTION 10: IS EMPTY");
 
 console.log(
