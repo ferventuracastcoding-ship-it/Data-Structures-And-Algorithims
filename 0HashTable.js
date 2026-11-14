@@ -25,6 +25,7 @@ class HashTable {
         const index = this.hash(key);
 
         if (!this.table[index]) {
+            // this.table[index] = [];
             this.table[index] = [];
         }
      // this.table[index].push([key,value]):
@@ -32,6 +33,7 @@ class HashTable {
     }
 
     get(key) {
+        // const index = this.hsh(key);
         const index = this.hash(key);
 
         const bucket = this.table[index];
@@ -52,6 +54,7 @@ class HashTable {
     }
 
     has(key) {
+        // return this.get(key) !== undefined;
         return this.get(key) !== undefined;
     }
 
